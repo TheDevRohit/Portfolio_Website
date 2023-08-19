@@ -149,7 +149,6 @@ gsap.from(".main-contact",{
 // Lodder 
 // ================>
 
-
 function time(){
     var a = 0;
     setInterval(() => {
@@ -160,7 +159,7 @@ function time(){
             a=100;
             document.querySelector("#loader h1").innerHTML=a+"%";   
         }
-    },70);
+    },50);
 }
 
 time()
@@ -175,8 +174,8 @@ tlload.to("#loader h1",{
 
 tlload.to("#loader",{
     top:"-100vh",
-    delay:0.5,
-    duration:2, 
+    delay:0.2,
+    duration:1, 
 })
 
 
@@ -229,8 +228,22 @@ var typed = new Typed("#change",{
 
 
 
+// Script For Nav Bar 
 
 
+let menuBtn = document.getElementById("menuBtn")
+let navItem = document.getElementById("nav-item")
+menuBtn.addEventListener("click" ,()=>{
+//    menuBtn.style.color="red"; 
+//    navItem.classList.toggle("mobileNav");
+   
+      if(navItem.style.display=="flex"){
+        navItem.style.display="none"
+      }else{
+        navItem.style.display="flex";
+      }
+
+});
 
 
 
