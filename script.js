@@ -234,16 +234,41 @@ var typed = new Typed("#change",{
 let menuBtn = document.getElementById("menuBtn")
 let navItem = document.getElementById("nav-item")
 menuBtn.addEventListener("click" ,()=>{
-//    menuBtn.style.color="red"; 
-//    navItem.classList.toggle("mobileNav");
-   
-      if(navItem.style.display=="flex"){
+
+    menuBtn.classList.toggle("fa-xmark");  
+      
+    if(navItem.style.display=="flex"){
         navItem.style.display="none"
-      }else{
+    }else{
         navItem.style.display="flex";
-      }
+    }
 
 });
+
+
+let togglebtn = document.getElementById("toggleBtn");
+let homesection =document.getElementById("home-section");
+let topText = document.getElementById("topText") 
+let topTwo = document.querySelector(".name-box h1")
+
+
+togglebtn.addEventListener("click" , ()=>{
+   if(togglebtn.classList.contains("fa-moon")){
+    togglebtn.classList.remove("fa-moon")
+    toggleBtn.classList.add("fa-sun");     
+    homesection.style.backgroundColor="white"    
+    topText.style.color="black"
+    topTwo.style.color="black"
+}else{
+    togglebtn.classList.remove("fa-sun")
+    toggleBtn.classList.add("fa-moon");
+    homesection.style.backgroundColor="rgb(22, 22, 22)";   
+    topText.style.color="white"
+    topTwo.style.color="white"  
+
+
+} 
+})
 
 
 

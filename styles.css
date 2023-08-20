@@ -37,6 +37,12 @@ header {
   color: wheat;
 
 }
+.toggle-btn i{
+  color: white;
+  font-size: 20px;
+  margin: 8px 0px;
+  cursor: pointer;
+}
 .logo:hover{
  color: white;
 }
@@ -59,7 +65,7 @@ header {
   width: 100%;
   background-color: var(--mainColor);
   left: 0;
-  bottom: -5px;
+  bottom: -10px;
   transform: scaleX(0%);
   transition: 0.5s ease-in-out;
 }
@@ -83,12 +89,21 @@ button {
   transition: 300ms;
   font-size: 15px;
 }
+#change{
+  color: var(--mainColor);
+}
 button:hover {
   background-color: var(--mainColor);
   color: var(--bodyColor);
 }
 
+#head{
+  cursor: pointer;
+}
+
+
 /* Mobile Nav Bar ClassList */
+
 
 .mobileNav{
   display: flex;  
@@ -165,7 +180,8 @@ button:hover {
 }
 .social-box .fb a {
   text-decoration: none;
-  color: white;
+  color: grey;
+  font-size: 20px;
 }
 .social-box .fb:hover {
   background-color: var(--mainColor);
@@ -193,13 +209,13 @@ button:hover {
   color: var(--bodyColor);
 }
 .resumeBtn a {
-  color: white;
+  color: grey;
   font-size: 14px;
   text-decoration: none;
 }
 .left-box button:hover {
   background-color: var(--mainColor);
-  color: var(--bodyColor);
+  color: grey;
 }
 .main-btn #hire-btn {
   background-color: var(--mainColor);
@@ -477,8 +493,8 @@ button:hover {
   background-color: var(--mainColor);
   position: absolute;
   transform: rotate(-90deg);
-  top: 80px;
-  margin-left: -35px;
+  top: 70px;
+  margin-left: -30px;
 }
 .all-input-box {
   display: flex;
@@ -556,11 +572,14 @@ button:hover {
    .nav-items{
     display: none;
     flex-direction: column;
-    background-color: rgb(94, 64, 64);
+    transition: 0.3s;
     position: absolute;
     top: 60px;
     right: 0px;
     padding: 50px;
+   }
+   i{
+    font-size: 17px;
    }
    header .menu-btn i{
     display: flex;
@@ -579,15 +598,22 @@ button:hover {
    .nav-items{
     display: none;
     flex-direction: column;
-    background-color: rgb(94, 64, 64);
+    background-color: black;
     position: absolute;
-    top: 60px;
+    top: 80px;
     right: 0px;
     padding: 50px;
+   height: 100vh;
+  }
+   .nav-items a{
+    margin-bottom: 16px;
    }
-
+   
    header #contact-btn{
     display: none;
+    position: absolute;
+    left: 230px;
+    top: 340px;
    }
     header .menu-btn i{
      display: flex;
@@ -610,10 +636,18 @@ button:hover {
     overflow: hidden;
   }
   .logo-box img {
-    height: 250px;
-    width: 250px;
-    margin-left: -50px;
+    height: 400px;
+    width: 400px;
+    margin-left: -80px;
+
   }
+
+  .toggle-btn i{
+   margin-top: 8px;
+  margin-left: -210px;
+  font-size: 22px;
+  }
+
  .quality-box p {
     margin-top: 30px;
     font-size: 15px;
@@ -629,7 +663,7 @@ button:hover {
   }
   .about-main-box {
     display: flex;
-    padding-left: 30px;
+    padding-left: 60px;
     flex-direction: column;
     /* flex-wrap: wrap; */
   }
@@ -679,6 +713,9 @@ button:hover {
   }
   .service-main .all-boxes .box h1 {
     font-size: 16px;
+  }
+  #head{
+    font-size: 37px;
   }
   .main-contact input {
     width: 300px;
