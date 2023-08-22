@@ -159,7 +159,7 @@ function time(){
             a=100;
             document.querySelector("#loader h1").innerHTML=a+"%";   
         }
-    },50);
+    },40);
 }
 
 time()
@@ -168,14 +168,15 @@ time()
 let tlload = gsap.timeline() 
 
 tlload.to("#loader h1",{
-   scale:2.5,
-   delay:0.3,
+   scale:2,
+   delay:0.2,
 })
 
 tlload.to("#loader",{
     top:"-100vh",
     delay:0.2,
-    duration:1, 
+    duration:0.5, 
+    opacity:0,
 })
 
 
@@ -247,27 +248,73 @@ menuBtn.addEventListener("click" ,()=>{
 
 
 let togglebtn = document.getElementById("toggleBtn");
-let homesection =document.getElementById("home-section");
-let topText = document.getElementById("topText") 
-let topTwo = document.querySelector(".name-box h1")
+let header = document.querySelector("header");
+let p = document.querySelectorAll("p")
+let section = document.querySelectorAll("section")
+let topText = document.getElementById("topText")
+let h = document.querySelectorAll("h1")
+let ht = document.querySelectorAll("h3")
 
 
 togglebtn.addEventListener("click" , ()=>{
    if(togglebtn.classList.contains("fa-moon")){
     togglebtn.classList.remove("fa-moon")
     toggleBtn.classList.add("fa-sun");     
-    homesection.style.backgroundColor="white"    
+    menuBtn.style.color="black"
+    navItem.style.backgroundColor="wheat"
+    header.style.backgroundColor="white"
     topText.style.color="black"
-    topTwo.style.color="black"
+    for (let i = 0; i<p.length; i++) {
+    const element = p[i];
+    element.style.color="black" 
+   }
+  
+   for (let i = 0; i<section.length; i++) {
+    const element = section[i];
+    element.style.backgroundColor="white" 
+   }
+   
+   
+   for (let i = 0; i<h.length; i++) {
+    const element = h[i];
+    element.style.color="black" 
+   }
+   
+   for (let i = 0; i<ht.length; i++) {
+    const element = ht[i];
+    element.style.color="black" 
+   }
+   
+
 }else{
     togglebtn.classList.remove("fa-sun")
     toggleBtn.classList.add("fa-moon");
-    homesection.style.backgroundColor="rgb(22, 22, 22)";   
+    header.style.backgroundColor="rgb(22,22,22)" 
+    menuBtn.style.color="white"
+    navItem.style.backgroundColor="rgb(22,22,22)"
     topText.style.color="white"
-    topTwo.style.color="white"  
+    
+      for (let i = 0; i<p.length; i++) {
+        const element = p[i];
+        element.style.color="grey" 
+       }
+      
+       for (let i = 0; i<section.length; i++) {
+         const element = section[i];
+         element.style.backgroundColor="rgb(22,22,22)" 
+       }
+       
+    for (let i = 0; i<h.length; i++) {
+     const element = h[i];
+     element.style.color="white" 
+   }
+       
+    for (let i = 0; i<ht.length; i++) {
+     const element = ht[i];
+     element.style.color="white" 
+   }
 
-
-} 
+   } 
 })
 
 

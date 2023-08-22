@@ -38,19 +38,21 @@ header {
 
 }
 .toggle-btn i{
-  color: white;
+  color: grey;
   font-size: 20px;
   margin: 8px 0px;
   cursor: pointer;
+  transition: ease-in-out 300ms;
+
 }
 .logo:hover{
- color: white;
+ color: grey;
 }
 .logo span {
   color: var(--mainColor);
 }
 .nav-items a {
-  color: white;
+  color: grey;
   font-size: 18px;
   margin: 0px 10px;
   text-decoration: none;
@@ -124,6 +126,8 @@ button:hover {
   font-size: 30px;
   margin-left: 100px;
   display: none;  
+  transition:300ms;
+  
 }
 .main-home {
   display: flex;
@@ -180,8 +184,11 @@ button:hover {
 }
 .social-box .fb a {
   text-decoration: none;
-  color: grey;
+  color: rgb(167, 148, 148);
   font-size: 20px;
+}
+.social-box .fb a:hover{
+  color: wheat;
 }
 .social-box .fb:hover {
   background-color: var(--mainColor);
@@ -204,9 +211,9 @@ button:hover {
   border: 2px solid var(--mainColor);
   border-radius: 6px;
 }
-.resumeBtn:hover {
+.resumeBtn:hover{
   background-color: var(--mainColor);
-  color: var(--bodyColor);
+  color: white;
 }
 .resumeBtn a {
   color: grey;
@@ -215,7 +222,6 @@ button:hover {
 }
 .left-box button:hover {
   background-color: var(--mainColor);
-  color: grey;
 }
 .main-btn #hire-btn {
   background-color: var(--mainColor);
@@ -223,7 +229,7 @@ button:hover {
 }
 .main-btn #hire-btn:hover {
   background-color: transparent;
-  color: white;
+  color: grey;
 }
 .right-box {
   height: 100vh;
@@ -528,6 +534,7 @@ button:hover {
 #sendBtn {
   height: 50px;
   margin-top: 10px;
+  color: grey;
 }
 .circlebtn {
   height: 40px;
@@ -543,9 +550,10 @@ button:hover {
 }
 #button {
   transition: 0.5s;
+  color: grey;
 }
 #button:hover {
-  color: var(--bodyColor);
+  color: white;
   background-color: var(--mainColor);
 }
 .toast {
@@ -577,6 +585,10 @@ button:hover {
     top: 60px;
     right: 0px;
     padding: 50px;
+   
+  }
+   .nav-items a{
+    margin-bottom: 15px;
    }
    i{
     font-size: 17px;
@@ -641,12 +653,13 @@ button:hover {
     margin-left: -80px;
 
   }
-
-  .toggle-btn i{
-   margin-top: 8px;
-  margin-left: -210px;
+  
+ .toggle-btn i{
   font-size: 22px;
-  }
+  margin-top: 8px;
+  margin-left: -210px;
+    
+}
 
  .quality-box p {
     margin-top: 30px;
