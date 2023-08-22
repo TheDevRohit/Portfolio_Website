@@ -261,7 +261,7 @@ togglebtn.addEventListener("click" , ()=>{
     togglebtn.classList.remove("fa-moon")
     toggleBtn.classList.add("fa-sun");     
     menuBtn.style.color="black"
-    navItem.style.backgroundColor="wheat"
+    navItem.style.backgroundColor="white"
     header.style.backgroundColor="white"
     topText.style.color="black"
     for (let i = 0; i<p.length; i++) {
