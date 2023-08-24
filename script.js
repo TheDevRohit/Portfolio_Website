@@ -238,10 +238,11 @@ menuBtn.addEventListener("click" ,()=>{
 
     menuBtn.classList.toggle("fa-xmark");  
       
-    if(navItem.style.display=="flex"){
-        navItem.style.display="none"
+    if(navItem.style.top=="80px"){
+        navItem.style.top="-1000px"
     }else{
-        navItem.style.display="flex";
+        navItem.style.top="80px";
+         navItem.style.display="flex"
     }
 
 });
