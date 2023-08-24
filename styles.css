@@ -26,6 +26,8 @@ header {
 #nav-bar {
   display: flex;
   justify-content: space-between;
+  transition: 500ms;
+  
 }
 .logo {
   transition: ease-in-out 0.3s;
@@ -126,8 +128,8 @@ button:hover {
   font-size: 30px;
   margin-left: 100px;
   display: none;  
-  transition:300ms;
-  
+  transition:1s;
+
 }
 .main-home {
   display: flex;
@@ -576,6 +578,7 @@ button:hover {
    }
     header .menu-btn i{
      display: flex;
+     transition: 500ms;
    }
    .nav-items{
     display: none;
@@ -583,6 +586,7 @@ button:hover {
     transition: 0.3s;
     position: absolute;
     top: 60px;
+    transition: 500ms;
     right: 0px;
     padding: 50px;
    
@@ -615,10 +619,13 @@ button:hover {
     top: 80px;
     right: 0px;
     padding: 50px;
-   height: 100vh;
+    height: 100vh;
+    transition: 500ms;
+    top: 70px;
+  
   }
    .nav-items a{
-    margin-bottom: 16px;
+     margin-bottom: 16px;
    }
    
    header #contact-btn{
