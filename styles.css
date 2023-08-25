@@ -10,7 +10,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header {
   position: sticky;
@@ -610,7 +610,11 @@ button:hover {
 /* Responsive  Styling  */
 
 @media screen and (max-width: 550px) {
-  
+
+    .main{
+      width: 100%;
+    }
+
    .nav-items{
     display: none;
     flex-direction: column;
@@ -622,7 +626,7 @@ button:hover {
     height: 100vh;
     transition: 500ms;
     top: 70px;
-  
+
   }
    .nav-items a{
      margin-bottom: 16px;

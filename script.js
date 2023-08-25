@@ -241,7 +241,9 @@ menuBtn.addEventListener("click" ,()=>{
     if(navItem.style.top=="80px"){
         navItem.style.top="-1000px"
     }else{
-        navItem.style.top="80px";
+         navItem.style.top="80px";
+         section.forEach(element => {
+         });
          navItem.style.display="flex"
     }
 
