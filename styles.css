@@ -602,8 +602,7 @@ button:hover {
     display: flex;
     height: 100vh;
     width: 50%;
-    top:80px;
-    right: -300px;
+    top: -1000px;
     background-color: black;
     flex-direction: column;
     position: absolute;

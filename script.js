@@ -228,10 +228,12 @@ menuBtn.addEventListener("click" ,()=>{
 
     menuBtn.classList.toggle("fa-xmark");  
       
-    if(navItem.style.right=="0px"){
-        navItem.style.right="-300px"
+    if(navItem.style.top=="80px"){
+        navItem.style.top="-1000px"
     }else{
-         navItem.style.right="0px";
+         navItem.style.top="80px";
+         section.forEach(element => {
+         });
          navItem.style.display="flex"
     }
 
