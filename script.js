@@ -8,16 +8,6 @@ tl.from(".logo" ,{
 
 let tl2 = gsap.timeline(); 
 
-tl2.from("span" ,{
-    y:-600,
-    duration:1,
-    scrollTrigger:{
-      trigger:"span",
-      scroller:"body",
-      scrub:2, 
-      stagger:1,  
-    }
-})
 
 tl2.from(".quality-box" ,{
     y:-700,
@@ -122,14 +112,14 @@ gsap.from(".service-main .box",{
 
 gsap.from(".main-portfolio .box",{
     scale:0.5,
-    duration:2,
+    duration: 0.5,
     scrollTrigger:{
         // markers:true,
         start:"top 100%",
         end:"bottom 100%",
         trigger:".main-portfolio .box ",
         scroller:"body",
-        scrub:2,
+        scrub:1,
     }
 })
 
@@ -238,12 +228,10 @@ menuBtn.addEventListener("click" ,()=>{
 
     menuBtn.classList.toggle("fa-xmark");  
       
-    if(navItem.style.top=="80px"){
-        navItem.style.top="-1000px"
+    if(navItem.style.right=="0px"){
+        navItem.style.right="-300px"
     }else{
-         navItem.style.top="80px";
-         section.forEach(element => {
-         });
+         navItem.style.right="0px";
          navItem.style.display="flex"
     }
 

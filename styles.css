@@ -21,6 +21,7 @@ header {
   justify-content: space-between;
   padding: 20px 100px;
   background-color: var(--bodyColor);
+  z-index: 10;
   /* background-color: transparent; */
 }
 #nav-bar {
@@ -53,6 +54,7 @@ header {
 .logo span {
   color: var(--mainColor);
 }
+
 .nav-items a {
   color: grey;
   font-size: 18px;
@@ -113,13 +115,10 @@ button:hover {
   display: flex;  
 }
 
-
-
-
 #home-section {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
-  /* margin-top: 10px; */
+  padding-top: 40px;
   display: flex;
   background-color: var(--bodyColor);
 }
@@ -377,7 +376,6 @@ button:hover {
   background-color: grey;
 }
 .service-main {
-  height: 90vh;
   width: 100%;
   padding-left: 40px;
   display: flex;
@@ -386,9 +384,8 @@ button:hover {
   transition: 300ms ease-in-out;
 }
 .service-main #head {
-  margin-top: 70px;
-  margin-bottom: 100px;
-  font-size: 50px;
+  font-size: 30px;
+  padding-bottom: 100px;
 }
 .service-main #head span {
   color: var(--mainColor);
@@ -402,14 +399,12 @@ button:hover {
 /* Portfolio Section  */
 
 #portfolio {
-  height: 120vh;
   width: 100%;
   background-color: var(--bodyColor);
 }
 .main-portfolio {
-  height: 100vh;
   width: 100%;
-  padding: 0px 100px;
+  padding: 40px 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -426,12 +421,14 @@ button:hover {
 }
 
 .main-portfolio .box {
-  padding: 30px 20px;
+  padding: 0 20px;
+}
+.box{
 }
 .box img {
   height: 140px;
   width: 190px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   border-radius: 10px;
 }
 .box .row {
@@ -452,7 +449,7 @@ button:hover {
 .all-portfolio-boxes {
   width: 100%;
   justify-content: space-evenly;
-  padding: 0px 100px;
+  padding: 0 100px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -465,25 +462,24 @@ button:hover {
 }
 
 .all-boxes .box:hover {
-  scale: 0.8;
   box-shadow: 3px 5px 10px var(--mainColor);
 }
 
 /* Contact Me Section  */
 
 #contact {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   padding-top: 50px;
   background-color: var(--bodyColor);
 }
 .main-contact {
-  height: 100%;
   width: 100%;
   display: flex;
-  padding: 100px 0px;
+  padding: 50px 0px;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .main-contact h1 {
@@ -493,17 +489,10 @@ button:hover {
 }
 .main-contact h1 span {
   color: var(--mainColor);
+  text-decoration: underline;
+
 }
-.main-contact h1 span::after {
-  content: "";
-  height: 70px;
-  width: 4px;
-  background-color: var(--mainColor);
-  position: absolute;
-  transform: rotate(-90deg);
-  top: 70px;
-  margin-left: -30px;
-}
+
 .all-input-box {
   display: flex;
   flex-direction: column;
@@ -548,7 +537,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 50px;
+  bottom: 50px;
+  left: 100px;
 }
 #button {
   transition: 0.5s;
@@ -562,13 +552,6 @@ button:hover {
   color: green;
   margin: 30px 50px;
   font-size: 24px;
-}
-.circlebtn {
-  cursor: pointer;
-  padding: 20px;
-  position: relative;
-  bottom: 100px;
-  left: 550px;
 }
 
 
@@ -616,27 +599,26 @@ button:hover {
     }
 
    .nav-items{
-    display: none;
-    flex-direction: column;
-    background-color: black;
-    position: absolute;
-    top: 80px;
-    right: 0px;
-    padding: 50px;
+    display: flex;
     height: 100vh;
+    width: 50%;
+    top:80px;
+    right: -300px;
+    background-color: black;
+    flex-direction: column;
+    position: absolute;
+    padding: 50px;
     transition: 500ms;
-    top: 70px;
-
   }
    .nav-items a{
-     margin-bottom: 16px;
+     margin-bottom: 30px;
    }
    
    header #contact-btn{
     display: none;
     position: absolute;
     left: 230px;
-    top: 340px;
+    /* top: 340px; */
    }
     header .menu-btn i{
      display: flex;
@@ -665,8 +647,7 @@ button:hover {
 
   }
   .circlebtn{
-    left: 150px;
-    bottom: -70px;
+    left: 300px;
    }
  .toggle-btn i{
   font-size: 22px;
@@ -774,14 +755,9 @@ button:hover {
   .all-portfolio-boxes {
     display: flex;
     flex-wrap: wrap;
-   padding-top: 1500px;
 }
 
 .main-portfolio h1{
   position: relative;
-  top: 1500px;
-}
- #portfolio{
-    height: 280vh;
- }
+  }
 }
