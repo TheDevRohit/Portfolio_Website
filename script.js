@@ -284,7 +284,7 @@ togglebtn.addEventListener("click" , ()=>{
     toggleBtn.classList.add("fa-moon");
     header.style.backgroundColor="rgb(22,22,22)" 
     menuBtn.style.color="white"
-    navItem.style.backgroundColor="rgb(22,22,22)"
+    navItem.style.backgroundColor="rgb(22,22,22,0.7)"
     topText.style.color="white"
     
       for (let i = 0; i<p.length; i++) {
